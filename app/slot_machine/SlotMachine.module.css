@@ -1,0 +1,29 @@
+.reelContainer {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  background-color: #222;
+}
+
+.reel {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: top;
+  transition: transform 0.5s ease;
+}
+
+.spin {
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    background-position-y: 0;
+  }
+  100% {
+    background-position-y: 1000px; /* adjust based on image size */
+  }
+}
