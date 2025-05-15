@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { motion } from 'framer-motion';
 
-const SYMBOLS = ['🍒', '🍋', '🍊', '⭐', '🔔', '💎'];
+const SYMBOLS = ['🍒', '🍋', '🍊', '⭐', '🔔', '7'];
 const STARTING_MONEY = 100;
 const SPIN_COST = 10;
 const WIN_REWARD = 50;
@@ -49,7 +49,7 @@ export default function SlotMachine() {
 
   useEffect(() => {
     const onKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Enter') {
+      if (e.key === 'Shift') {
         !started ? startGame() : handleSpin();
       }
     };
